@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <h1 id="welcome-message">Hello, User!</h1>
+            <div class="user-info">
+                <p><strong>Username:</strong> <span id="user-username"></span></p>
+                <p><strong>Email:</strong> <span id="user-email"></span></p>
+                <p><strong>User ID:</strong> <span id="user-id"></span></p>
+            </div>
+            <a href="/logout" class="btn logout-btn">Logout</a>
+        </div>
+    </div>
+
+    <script>
+        // Fetch user data when the page loads
+        fetch('/api/user')
+            .then(response => {
+                if (!response.ok) {
+                    window.location.href = '/';
+                    return;
+                }
+                return response.json();
+            })
+            .then(user => {
+                if (user) {
+                    document.getElementById('welcome-message').textContent = `Hello, ${user.username}!`;
+                    document.getElementById('user-username').textContent = user.username;
+                    document.getElementById('user-email').textContent = user.email;
+                    document.getElementById('user-id').textContent = user.id;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                window.location.href = '/';
+            });
+    </script>
+</body>
+</html>
