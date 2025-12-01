@@ -1,8 +1,7 @@
-// config/logger.config.js
 const winston = require('winston');
 const path = require('path');
 
-// Define log levels
+// Log levels
 const levels = {
   error: 0,
   warn: 1,
@@ -11,7 +10,7 @@ const levels = {
   debug: 4,
 };
 
-// Define colors for each level
+// Colors for each level
 const colors = {
   error: 'red',
   warn: 'yellow',
