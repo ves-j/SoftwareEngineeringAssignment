@@ -132,6 +132,7 @@ app.post('/signup', (req, res) => {
 // Get user data
 app.get('/api/user', (req, res) => {
   if (req.session.user) {
+    logger.debug(`User data requested for: ${req.session.user.username}`);
     res.json({
       success: true,
       user: {
@@ -141,6 +142,7 @@ app.get('/api/user', (req, res) => {
       }
     });
   } else {
+    logger.warn('Unauthorized attempt to access user data');
     res.status(401).json({ 
       success: false,
       error: 'Not authenticated' 
@@ -150,6 +152,9 @@ app.get('/api/user', (req, res) => {
 
 // Logout endpoint
 app.get('/logout', (req, res) => {
+  if (req.session.user) {
+    logger.info(`User logged out: ${req.session.user.username}`);
+  }
   req.session.destroy();
   res.json({
     success: true,
@@ -159,6 +164,7 @@ app.get('/logout', (req, res) => {
 
 // Error handling middleware
 app.use((err, req, res, next) => {
+  logger.error(`Unhandled error: ${err.message}`, { stack: err.stack });
   console.error(err.stack);
   res.status(500).json({
     success: false,
@@ -167,20 +173,9 @@ app.use((err, req, res, next) => {
   });
 });
 
-// // ✅ FIXED - Handle unhandled routes for API
-// app.use(/\/api\/*/, (req, res) => {
-//   res.status(404).json({
-//     success: false,
-//     message: 'API route not found'
-//   });
-// });
-
-// // ✅ FIXED - Handle unhandled routes for frontend
-// app.use('*', (req, res) => {
-//   res.status(404).sendFile(path.join(__dirname, 'public', '404.html'));
-// });
 
 app.use(/.*/, (req, res) => {
+  logger.error(`Unhandled error: ${err.message}`, { stack: err.stack });
   if (req.originalUrl.startsWith('/api')) {
     res.status(404).json({
       success: false,
@@ -190,6 +185,19 @@ app.use(/.*/, (req, res) => {
     res.status(404).sendFile(path.join(__dirname, 'public', '404.html'));
   }
 });
+
+// Handle uncaught exceptions
+process.on('uncaughtException', (error) => {
+  logger.error('Uncaught Exception:', error);
+  if (process.env.NODE_ENV === 'production') {
+    process.exit(1);
+  }
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  logger.error('Unhandled Rejection at:', promise, 'reason:', reason);
+});
+
 
 app.listen(PORT, () => {
   console.log(`Victoria Hall Booking System running on port ${PORT}`);
