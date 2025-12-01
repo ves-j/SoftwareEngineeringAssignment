@@ -1,0 +1,28 @@
+2025-12-01 10:20:27:2027 [31merror[39m: [31muncaughtException: The argument 'id' must be a non-empty string. Received ''[39m
+[31mTypeError [ERR_INVALID_ARG_VALUE]: The argument 'id' must be a non-empty string. Received ''[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1498:11)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/server.js:10:23)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)[39m
+2025-12-01 10:20:32:2032 [31merror[39m: [31muncaughtException: Cannot find module './middleware/'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module './middleware/'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/server.js:10:23)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m

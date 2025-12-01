@@ -1,4 +1,3 @@
-// server.js
 const express = require('express');
 const session = require('express-session');
 const bodyParser = require('body-parser');
@@ -7,7 +6,9 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 const connectDB = require('./config/database.config');
 
-// ✅ FIXED - Remove .default
+const logger = require('./config/logger.config')
+const requestLogger = require('./middleware/logger.middleware')
+
 const apiRoutes = require('./routes/index.route');
 
 dotenv.config();
@@ -16,7 +17,6 @@ connectDB();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -27,6 +27,7 @@ app.use(session({
   saveUninitialized: true,
   cookie: { secure: false }
 }));
+app.use(requestLogger)
 app.use('/api', apiRoutes);
 
 // Hardcoded user credentials
@@ -39,19 +40,23 @@ const users = [
 
 // Serve login page as homepage
 app.get('/', (req, res) => {
+  logger.info('Serving login page');
   res.sendFile(path.join(__dirname, 'public', 'login.html'));
 });
 
 // Serve signup page
 app.get('/signup', (req, res) => {
+  logger.info('Serving signup page');
   res.sendFile(path.join(__dirname, 'public', 'signup.html'));
 });
 
 // Serve dashboard page
 app.get('/dashboard', (req, res) => {
   if (req.session.user) {
+    logger.info(`Serving dashboard for user: ${req.session.user.username}`);
     res.sendFile(path.join(__dirname, 'public', 'dashboard.html'));
   } else {
+    logger.warn('Unauthorized access attempt to dashboard');
     res.redirect('/');
   }
 });
@@ -61,11 +66,14 @@ app.get('/dashboard', (req, res) => {
 // Login endpoint
 app.post('/login', (req, res) => {
   const { username, password } = req.body;
+
+  logger.info(`Login attempt for username: ${username}`);
   
   const user = users.find(u => u.username === username && u.password === password);
   
   if (user) {
     req.session.user = user;
+    logger.info(`Successful login for user: ${username}`);
     res.json({
       success: true,
       message: 'Login successful',
@@ -76,6 +84,7 @@ app.post('/login', (req, res) => {
       }
     });
   } else {
+    logger.warn(`Failed login attempt for username: ${username}`);
     res.status(401).json({
       success: false,
       message: 'Invalid credentials!'
@@ -86,10 +95,13 @@ app.post('/login', (req, res) => {
 // Signup endpoint
 app.post('/signup', (req, res) => {
   const { username, password, email } = req.body;
+
+  logger.info(`Signup attempt for username: ${username}, email: ${email}`);
   
   const existingUser = users.find(u => u.username === username || u.email === email);
   
   if (existingUser) {
+    logger.warn(`User already exists: ${username} or ${email}`);
     res.status(409).json({
       success: false,
       message: 'User already exists!'
@@ -104,6 +116,7 @@ app.post('/signup', (req, res) => {
     users.push(newUser);
     
     req.session.user = newUser;
+    logger.info(`New user created: ${username} with ID: ${newUser.id}`);
     res.status(201).json({
       success: true,
       message: 'User created successfully',
