@@ -1,4 +1,3 @@
-// controllers/event.controller.js
 const Event = require('../models/event.model');
 
 async function getAllEvents(req, res) {

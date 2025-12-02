@@ -1,4 +1,3 @@
-// controllers/seat.controller.js
 const seatService = require('../services/seat.service');
 const Event = require('../models/event.model');
 const pricingService = require('../services/pricing.service');
@@ -70,6 +69,8 @@ async function getSeatPricing(req, res) {
         message: 'Event not found'
       });
     }
+
+    console.log('A')
     
     const price = await seatService.getSeatPricing(seatId, event);
     
