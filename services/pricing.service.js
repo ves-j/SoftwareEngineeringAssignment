@@ -1,4 +1,3 @@
-// services/pricing.service.js
 class PricingService {
   constructor() {
     this.pricingMatrix = {

@@ -1,4 +1,3 @@
-// services/seat.service.js
 const Seat = require('../models/seat.model');
 
 class SeatService {
@@ -105,7 +104,8 @@ class SeatService {
     const seat = await Seat.findById(seatId);
     if (!seat) throw new Error('Seat not found');
 
-    const pricingService = require('./pricingService');
+    console.log('B')
+    const pricingService = require('./pricing.service');
     return pricingService.calculateSeatPrice(
       event.basePrice,
       event.eventType,
