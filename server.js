@@ -22,19 +22,20 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use(session({
-  secret: process.env.SESSION_SECRET || 'your-secret-key',
+  secret: process.env.SESSION_SECRET,
   resave: false,
   saveUninitialized: true,
   cookie: { secure: false }
 }));
 app.use(requestLogger)
+
 app.use('/api', apiRoutes);
 
 // Hardcoded user credentials
-const users = [
-  { id: 1, username: 'admin', password: 'password123', email: 'admin@example.com' },
-  { id: 2, username: 'user1', password: '123456', email: 'user1@example.com' }
-];
+// const users = [
+//   { id: 1, username: 'admin', password: 'password123', email: 'admin@example.com' },
+//   { id: 2, username: 'user1', password: '123456', email: 'user1@example.com' }
+// ];
 
 // Frontend Routes
 
@@ -52,13 +53,15 @@ app.get('/signup', (req, res) => {
 
 // Serve dashboard page
 app.get('/dashboard', (req, res) => {
-  if (req.session.user) {
-    logger.info(`Serving dashboard for user: ${req.session.user.username}`);
-    res.sendFile(path.join(__dirname, 'public', 'dashboard.html'));
-  } else {
-    logger.warn('Unauthorized access attempt to dashboard');
-    res.redirect('/');
-  }
+  res.sendFile(path.join(__dirname, 'public', 'dashboard.html'));
+
+  // if (req.session.user) {
+  //   logger.info(`Serving dashboard for user: ${req.session.user.username}`);
+  //   res.sendFile(path.join(__dirname, 'public', 'dashboard.html'));
+  // } else {
+  //   logger.warn('Unauthorized access attempt to dashboard');
+  //   res.redirect('/');
+  // }
 });
 
 // API Authentication Routes

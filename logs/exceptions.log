@@ -26,3 +26,1355 @@
 [31m    at require (node:internal/modules/helpers:152:16)[39m
 [31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/server.js:10:23)[39m
 [31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:28:29:2829 [31merror[39m: [31muncaughtException: Unexpected identifier 'email'[39m
+[31m/Users/timpel/Documents/Code/Software Assignment/models/user.model.js:12[39m
+[31m  email: {[39m
+[31m  ^^^^^[39m
+
+[31mSyntaxError: Unexpected identifier 'email'[39m
+[31m    at wrapSafe (node:internal/modules/cjs/loader:1691:18)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1734:20)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/middleware/auth.middleware.js:2:14)[39m
+2025-12-02 14:28:30:2830 [31merror[39m: [31muncaughtException: username is not defined[39m
+[31mReferenceError: username is not defined[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/models/user.model.js:11:3)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/middleware/auth.middleware.js:2:14)[39m
+2025-12-02 14:28:37:2837 [31merror[39m: [31muncaughtException: sS is not defined[39m
+[31mReferenceError: sS is not defined[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/models/user.model.js:12:11)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/middleware/auth.middleware.js:2:14)[39m
+2025-12-02 14:36:54:3654 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:37:00:370 [31merror[39m: [31muncaughtException: authorize is not defined[39m
+[31mReferenceError: authorize is not defined[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/middleware/auth.middleware.js:41:26)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:4:14)[39m
+2025-12-02 14:37:02:372 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:37:05:375 [31merror[39m: [31muncaughtException: authorize is not defined[39m
+[31mReferenceError: authorize is not defined[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/middleware/auth.middleware.js:53:26)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:4:14)[39m
+2025-12-02 14:37:19:3719 [31merror[39m: [31muncaughtException: authorize is not defined[39m
+[31mReferenceError: authorize is not defined[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/middleware/auth.middleware.js:52:26)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:4:14)[39m
+2025-12-02 14:37:50:3750 [31merror[39m: [31muncaughtException: authorize is not defined[39m
+[31mReferenceError: authorize is not defined[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/middleware/auth.middleware.js:42:26)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:4:14)[39m
+2025-12-02 14:37:51:3751 [31merror[39m: [31muncaughtException: authorize is not defined[39m
+[31mReferenceError: authorize is not defined[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/middleware/auth.middleware.js:52:26)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:4:14)[39m
+2025-12-02 14:37:52:3752 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:38:24:3824 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:38:31:3831 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:38:38:3838 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:39:00:390 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:40:27:4027 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:40:34:4034 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:40:36:4036 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:40:38:4038 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:40:40:4040 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:40:44:4044 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:41:18:4118 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:41:23:4123 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:41:26:4126 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:41:34:4134 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:44:41:4441 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:44:42:4442 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:44:54:4454 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:44:56:4456 [31merror[39m: [31muncaughtException: Invalid or unexpected token[39m
+[31m/Users/timpel/Documents/Code/Software Assignment/routes/index.route.js:9[39m
+[31mrouter.use(\)[39m
+[31m           ^[39m
+
+[31mSyntaxError: Invalid or unexpected token[39m
+[31m    at wrapSafe (node:internal/modules/cjs/loader:1691:18)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1734:20)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/server.js:12:19)[39m
+2025-12-02 14:44:59:4459 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:45:00:450 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:45:04:454 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:45:07:457 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:45:11:4511 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:45:15:4515 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:45:16:4516 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:45:24:4524 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:46:26:4626 [31merror[39m: [31muncaughtException: Unexpected end of input[39m
+[31m/Users/timpel/Documents/Code/Software Assignment/services/booking.service.js:149[39m
+[31m    const[39m
+[31m         [39m
+
+[31mSyntaxError: Unexpected end of input[39m
+[31m    at wrapSafe (node:internal/modules/cjs/loader:1691:18)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1734:20)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/controllers/booking.controller.js:1:24)[39m
+2025-12-02 14:46:51:4651 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:47:03:473 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:47:06:476 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:47:30:4730 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:47:34:4734 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 14:48:02:482 [31merror[39m: [31muncaughtException: argument handler is required[39m
+[31mTypeError: argument handler is required[39m
+[31m    at router.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:385:11)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+2025-12-02 14:48:03:483 [31merror[39m: [31muncaughtException: argument handler is required[39m
+[31mTypeError: argument handler is required[39m
+[31m    at router.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:385:11)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:6:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+2025-12-02 14:48:22:4822 [31merror[39m: [31muncaughtException: Missing initializer in destructuring declaration[39m
+[31m/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:5[39m
+[31mconst {}[39m
+[31m      ^^[39m
+
+[31mSyntaxError: Missing initializer in destructuring declaration[39m
+[31m    at wrapSafe (node:internal/modules/cjs/loader:1691:18)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1734:20)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/index.route.js:4:23)[39m
+2025-12-02 14:48:29:4829 [31merror[39m: [31muncaughtException: Cannot find module '../middleware/'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module '../middleware/'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:5:12)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:48:30:4830 [31merror[39m: [31muncaughtException: auth is not defined[39m
+[31mReferenceError: auth is not defined[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:7:12)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/index.route.js:4:23)[39m
+2025-12-02 14:48:33:4833 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:48:37:4837 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:48:43:4843 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:48:58:4858 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:50:01:501 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:50:17:5017 [31merror[39m: [31muncaughtException: Unexpected identifier 'f'[39m
+[31m/Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js:158[39m
+[31masync f÷[39m
+[31m      ^[39m
+
+[31mSyntaxError: Unexpected identifier 'f'[39m
+[31m    at wrapSafe (node:internal/modules/cjs/loader:1691:18)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1734:20)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:3:24)[39m
+2025-12-02 14:50:19:5019 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:50:23:5023 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:50:29:5029 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:50:33:5033 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:50:37:5037 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:50:45:5045 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:50:50:5050 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:51:21:5121 [31merror[39m: [31muncaughtException: Invalid or unexpected token[39m
+[31m/Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js:108[39m
+[31m÷[39m
+
+
+[31mSyntaxError: Invalid or unexpected token[39m
+[31m    at wrapSafe (node:internal/modules/cjs/loader:1691:18)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1734:20)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:3:24)[39m
+2025-12-02 14:51:23:5123 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:51:25:5125 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:51:38:5138 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:51:48:5148 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:51:51:5151 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:52:02:522 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:52:05:525 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:52:19:5219 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:52:24:5224 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:52:30:5230 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:52:31:5231 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 14:52:56:5256 [31merror[39m: [31muncaughtException: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31mError: Cannot find module 'nodemailer'[39m
+[31mRequire stack:[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/utils/email.util.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/controllers/auth.controller.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/routes/index.route.js[39m
+[31m- /Users/timpel/Documents/Code/Software Assignment/server.js[39m
+[31m    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)[39m
+[31m    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)[39m
+[31m    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1226:37)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/utils/email.util.js:1:20)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2025-12-02 15:12:29:1229 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:8:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 15:12:56:1256 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:8:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 15:17:00:170 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:8:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 15:17:04:174 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:8:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 15:17:22:1722 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:8:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 15:17:25:1725 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:8:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 15:17:33:1733 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:8:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 15:18:02:182 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as patch] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as patch] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:14:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 15:18:06:186 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as patch] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as patch] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:13:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 15:18:21:1821 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as post] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:7:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-02 15:19:29:1929 [31merror[39m: [31muncaughtException: argument handler is required[39m
+[31mTypeError: argument handler is required[39m
+[31m    at router.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:385:11)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:7:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+2025-12-02 15:19:32:1932 [31merror[39m: [31muncaughtException: argument handler is required[39m
+[31mTypeError: argument handler is required[39m
+[31m    at router.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:385:11)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:7:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
