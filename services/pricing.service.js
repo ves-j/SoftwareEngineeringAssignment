@@ -90,22 +90,43 @@ class PricingService {
   }
 
   calculateSeatPrice(basePrice, eventType, section, row, seatNumber, concessionType = 'adult', isLoyaltyMember = false) {
+    console.log('=== CALCULATE SEAT PRICE ===');
+    console.log('Inputs:', {
+      basePrice,
+      eventType,
+      section,
+      row,
+      seatNumber,
+      concessionType,
+      isLoyaltyMember
+    });
+    
     const category = this.getSeatCategory(section, row, seatNumber);
     const multiplier = this.pricingMatrix[section]?.[eventType]?.[category] || 1.0;
     
+    console.log('Category:', category, 'Multiplier:', multiplier);
+    
     let price = basePrice * (1 + multiplier);
+    console.log('Price after multiplier:', price);
     
     // Apply best concession
     if (concessionType !== 'adult' && this.concessions[concessionType]) {
-      price = price * (1 - this.concessions[concessionType]);
+      const concessionDiscount = this.concessions[concessionType];
+      price = price * (1 - concessionDiscount);
+      console.log(`After ${concessionType} discount (${concessionDiscount * 100}%):`, price);
     }
     
     // Apply loyalty discount
     if (isLoyaltyMember) {
       price = price * 0.90; // 10% discount
+      console.log('After loyalty discount (10%):', price);
     }
     
-    return Math.round(price * 100) / 100; // Round to 2 decimal places
+    const finalPrice = Math.round(price * 100) / 100;
+    console.log('Final price:', finalPrice);
+    console.log('=== END CALCULATION ===');
+    
+    return finalPrice;
   }
 
   calculateTotalPrice(seats, basePrice, eventType, concessions = [], isLoyaltyMember = false) {
