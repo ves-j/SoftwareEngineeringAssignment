@@ -1,7 +1,6 @@
 const User = require('../models/user.model');
 const jwt = require('jsonwebtoken');
 
-// Generate JWT Token
 const signToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET || 'victoria-hall-secret', {
     expiresIn: process.env.JWT_EXPIRES_IN || '7d'
@@ -11,7 +10,6 @@ const signToken = (id) => {
 const createSendToken = (user, statusCode, res) => {
   const token = signToken(user._id);
   
-  // Remove password from output
   user.password = undefined;
   
   res.status(statusCode).json({
@@ -23,12 +21,11 @@ const createSendToken = (user, statusCode, res) => {
   });
 };
 
-// Signup
 async function signup(req, res) {
   try {
+    console.log('A')
     const { name, email, password, dateOfBirth, phone } = req.body;
     
-    // Check if user already exists
     const existingUser = await User.findOne({ email });
     if (existingUser) {
       return res.status(400).json({
@@ -71,12 +68,10 @@ async function signup(req, res) {
   }
 }
 
-// Login
 async function login(req, res) {
   try {
     const { email, password } = req.body;
     
-    // 1) Check if email and password exist
     if (!email || !password) {
       return res.status(400).json({
         success: false,
@@ -84,7 +79,6 @@ async function login(req, res) {
       });
     }
     
-    // 2) Check if user exists && password is correct
     const user = await User.findOne({ email }).select('+password');
     
     if (!user) {
@@ -94,7 +88,6 @@ async function login(req, res) {
       });
     }
     
-    // Check password
     const isPasswordCorrect = await user.correctPassword(password);
     if (!isPasswordCorrect) {
       return res.status(401).json({
@@ -103,7 +96,6 @@ async function login(req, res) {
       });
     }
     
-    // 3) Check if account is active
     if (!user.isActive) {
       return res.status(401).json({
         success: false,
@@ -111,7 +103,6 @@ async function login(req, res) {
       });
     }
     
-    // 4) If everything ok, send token to client
     createSendToken(user, 200, res);
   } catch (error) {
     console.error('Login error:', error);
@@ -123,15 +114,12 @@ async function login(req, res) {
   }
 }
 
-// Update Password (logged in user)
 async function updatePassword(req, res) {
   try {
     const { currentPassword, newPassword } = req.body;
     
-    // 1) Get user from collection
     const user = await User.findById(req.user.id).select('+password');
     
-    // 2) Check if current password is correct
     if (!(await user.correctPassword(currentPassword))) {
       return res.status(401).json({
         success: false,
@@ -139,11 +127,9 @@ async function updatePassword(req, res) {
       });
     }
     
-    // 3) Update password
     user.password = newPassword;
     await user.save();
     
-    // 4) Log user in, send JWT
     createSendToken(user, 200, res);
   } catch (error) {
     console.error('Update password error:', error);
@@ -155,10 +141,9 @@ async function updatePassword(req, res) {
   }
 }
 
-// Get current user profile
 async function getMe(req, res) {
   try {
-    const user = await User.findById(req.user.id);
+    const user = await User.findById(req.user.id).select('-password');
     res.status(200).json({
       success: true,
       data: {
@@ -175,7 +160,6 @@ async function getMe(req, res) {
   }
 }
 
-// Update user profile
 async function updateMe(req, res) {
   try {
     const { name, phone, dateOfBirth } = req.body;
