@@ -12,20 +12,25 @@ const bookingSchema = new Schema({
     ref: 'Event',
     required: true
   },
-  customer: {
-    name: {
-      type: String,
-      required: true
-    },
-    email: {
-      type: String,
-      required: true
-    },
-    phone: {
-      type: String,
-      required: true
-    }
+   user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: true  
   },
+  // customer: {
+  //   name: {
+  //     type: String,
+  //     required: true
+  //   },
+  //   email: {
+  //     type: String,
+  //     required: true
+  //   },
+  //   phone: {
+  //     type: String,
+  //     required: false
+  //   }
+  // },
   seats: [{
     seat: {
       type: Schema.Types.ObjectId,
