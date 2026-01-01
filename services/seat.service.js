@@ -1,9 +1,17 @@
 const Seat = require('../models/seat.model');
+const Booking = require('../models/booking.model');
+
 
 class SeatService {
   async initializeTheaterLayout() {
     const seatCount = await Seat.countDocuments();
-    if (seatCount > 0) return; // Already initialized
+    // if (seatCount > 0) return; // Already initialized
+    if (seatCount > 0) {
+      // Reset all seats to available (if using isAvailable field)
+      await Seat.updateMany({}, { $set: { isAvailable: true } });
+      console.log('Reset all seats to available');
+      return;
+    }
 
     const seats = [];
     
@@ -100,11 +108,96 @@ class SeatService {
     return await Seat.find(query).sort({ section: 1, row: 1, seatNumber: 1 });
   }
 
+  async getAvailableSeats(eventId, section = null) {
+    try {
+      // First get ALL seats
+      let seatQuery = {};
+      if (section) seatQuery.section = section;
+      
+      const allSeats = await Seat.find(seatQuery)
+        .sort({ section: 1, row: 1, seatNumber: 1 });
+      
+      // Get all bookings for this event (excluding cancelled ones)
+      const eventBookings = await Booking.find({ 
+        event: eventId,
+        status: { $ne: 'cancelled' }
+      }).select('seats.seat');
+      
+      // Extract all booked seat IDs for this event
+      const bookedSeatIds = new Set();
+      eventBookings.forEach(booking => {
+        booking.seats.forEach(seatBooking => {
+          if (seatBooking.seat) {
+            bookedSeatIds.add(seatBooking.seat.toString());
+          }
+        });
+      });
+      
+      console.log(`Event ${eventId}: Found ${bookedSeatIds.size} booked seats out of ${allSeats.length} total seats`);
+      
+      // Filter out booked seats
+      const availableSeats = allSeats.filter(seat => 
+        !bookedSeatIds.has(seat._id.toString())
+      );
+      
+      return availableSeats;
+    } catch (error) {
+      console.error('Error in getAvailableSeats:', error);
+      throw error;
+    }
+  }
+
+  // Add new method to check if specific seats are available for an event
+  async areSeatsAvailableForEvent(seatIds, eventId) {
+    try {
+      // Get all booked seats for this event
+      const eventBookings = await Booking.find({ 
+        event: eventId,
+        status: { $ne: 'cancelled' }
+      }).select('seats.seat');
+      
+      // Extract booked seat IDs
+      const bookedSeatIds = new Set();
+      eventBookings.forEach(booking => {
+        booking.seats.forEach(seatBooking => {
+          if (seatBooking.seat) {
+            bookedSeatIds.add(seatBooking.seat.toString());
+          }
+        });
+      });
+      
+      // Check each requested seat
+      const unavailableSeats = [];
+      for (const seatId of seatIds) {
+        if (bookedSeatIds.has(seatId.toString())) {
+          // Find seat details for error message
+          const seat = await Seat.findById(seatId);
+          if (seat) {
+            unavailableSeats.push({
+              seatId: seat._id,
+              seatNumber: seat.seatNumber,
+              row: seat.row,
+              section: seat.section
+            });
+          }
+        }
+      }
+      
+      return {
+        allAvailable: unavailableSeats.length === 0,
+        unavailableSeats
+      };
+    } catch (error) {
+      console.error('Error in areSeatsAvailableForEvent:', error);
+      throw error;
+    }
+  }
+  
+  // Update getSeatPricing to be event-specific
   async getSeatPricing(seatId, event) {
     const seat = await Seat.findById(seatId);
     if (!seat) throw new Error('Seat not found');
 
-    console.log('B')
     const pricingService = require('./pricing.service');
     return pricingService.calculateSeatPrice(
       event.basePrice,

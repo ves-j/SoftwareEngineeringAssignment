@@ -6,52 +6,44 @@ const pricingService = require('./pricing.service');
 class BookingService {
   async createBooking(bookingData, userId) {
     try {
-      // Check if event exists and is active
       const event = await Event.findById(bookingData.eventId);
       if (!event || !event.isActive) {
         throw new Error('Event not found or is no longer available');
       }
       
-      // Check if event is sold out
+      // Check total seats for event
       const totalSeats = await Seat.countDocuments();
-      const bookedSeats = await Booking.countDocuments({ 
+      const eventBookings = await Booking.countDocuments({ 
         event: bookingData.eventId,
         status: { $ne: 'cancelled' }
       });
       
-      if (bookedSeats >= totalSeats) {
+      if (eventBookings >= totalSeats) {
         throw new Error('This event is completely sold out');
       }
       
-      // Check seat availability
+      // Validate seats exist
       const seats = await Seat.find({ _id: { $in: bookingData.seatIds } });
       if (seats.length !== bookingData.seatIds.length) {
         throw new Error('One or more seats not found');
       }
       
-      const unavailableSeats = seats.filter(seat => !seat.isAvailable);
-      if (unavailableSeats.length > 0) {
-        throw new Error(`Seats ${unavailableSeats.map(s => s.seatNumber).join(', ')} are already booked`);
-      }
-      
-      // Check if any seat is being double-booked (race condition prevention)
-      const seatUpdate = await Seat.updateMany(
-        { 
-          _id: { $in: bookingData.seatIds },
-          isAvailable: true 
-        },
-        { $set: { isAvailable: false } }
+      // Check event-specific seat availability
+      const seatService = require('./seat.service');
+      const availabilityCheck = await seatService.areSeatsAvailableForEvent(
+        bookingData.seatIds,
+        bookingData.eventId
       );
       
-      if (seatUpdate.modifiedCount !== bookingData.seatIds.length) {
-        // Some seats were booked by someone else in the meantime
-        throw new Error('Some seats were just booked by another user. Please try different seats.');
+      if (!availabilityCheck.allAvailable) {
+        const seatInfo = availabilityCheck.unavailableSeats
+          .map(s => `${s.row}${s.seatNumber} (${s.section})`)
+          .join(', ');
+        throw new Error(`Seats ${seatInfo} are already booked for this event`);
       }
       
-      // Generate unique booking reference
       const bookingReference = this.generateBookingReference();
       
-      // Calculate total price
       const totalAmount = pricingService.calculateTotalPrice(
         seats,
         event.basePrice,
@@ -66,11 +58,12 @@ class BookingService {
         finalConcessions.push('group');
       }
       
-      // Create booking with user association
+      console.log("Creating booking for user ID:", userId);
+      
       const booking = new Booking({
         bookingReference,
         event: bookingData.eventId,
-        user: userId, // Associate booking with user
+        user: userId,
         customer: bookingData.customer,
         seats: seats.map(seat => ({
           seat: seat._id,
@@ -87,21 +80,13 @@ class BookingService {
         })),
         totalAmount,
         loyaltyDiscount: bookingData.isLoyaltyMember,
-        status: 'confirmed' // Changed from pending to confirmed
+        status: 'confirmed'
       });
       
       await booking.save();
-      
-      // Send booking confirmation email (you can implement this)
-      // await this.sendBookingConfirmation(booking, bookingData.customer.email);
-      
       return booking;
+      
     } catch (error) {
-      // If booking fails, release the seats
-      await Seat.updateMany(
-        { _id: { $in: bookingData.seatIds } },
-        { $set: { isAvailable: true } }
-      );
       throw error;
     }
   }
@@ -113,13 +98,13 @@ class BookingService {
   }
 
   async getBookingByReference(bookingReference, userId = null) {
-    const query = { bookingReference };
+    const query = { _id: bookingReference };
     
-    // If userId provided, ensure user can only access their own bookings
     if (userId) {
       query.user = userId;
     }
     
+    console.log("The request got here ")
     return await Booking.findOne(query)
       .populate('event')
       .populate('seats.seat')
@@ -135,15 +120,15 @@ class BookingService {
 
   async cancelBooking(bookingReference, userId) {
     const booking = await Booking.findOne({ 
-      bookingReference,
-      user: userId // Ensure user can only cancel their own bookings
+      _id: bookingReference,
+      user: userId
     });
     
     if (!booking) {
       throw new Error('Booking not found or you are not authorized to cancel this booking');
     }
     
-    // Check if cancellation is allowed (e.g., within 24 hours of event)
+    await booking.populate('event');
     const eventDate = booking.event.eventDate;
     const now = new Date();
     const hoursUntilEvent = (eventDate - now) / (1000 * 60 * 60);
@@ -154,13 +139,6 @@ class BookingService {
     
     booking.status = 'cancelled';
     await booking.save();
-    
-    // Free up the seats
-    const seatIds = booking.seats.map(seat => seat.seat);
-    await Seat.updateMany(
-      { _id: { $in: seatIds } },
-      { $set: { isAvailable: true } }
-    );
     
     return booking;
   }
