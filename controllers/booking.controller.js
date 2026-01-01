@@ -4,13 +4,12 @@ const Event = require('../models/event.model');
 async function createBooking(req, res) {
   try {
     const { eventId, seatIds, concessions } = req.body;
-    const userId = req.user._id; // From auth middleware
+    const userId = req.user._id;
     
-    // Use logged-in user's info instead of request body
     const customer = {
       name: req.user.name,
       email: req.user.email,
-      phone: req.body.phone || '' // Phone might not be in user model
+      phone: req.body.phone || '' 
     };
     
     const event = await Event.findById(eventId);
@@ -20,8 +19,9 @@ async function createBooking(req, res) {
         message: 'Event not found'
       });
     }
+
+    console.log('A')
     
-    // Check if event is sold out
     const availability = await bookingService.getEventAvailability(eventId);
     if (availability.isSoldOut) {
       return res.status(400).json({
@@ -30,11 +30,13 @@ async function createBooking(req, res) {
       });
     }
     
+    console.log('B')
     // Check if booking is allowed (loyalty member early access)
     const isLoyaltyMember = req.user.isLoyaltyMember || false;
     const oneWeekBeforeRelease = new Date(event.releaseDate);
     oneWeekBeforeRelease.setDate(oneWeekBeforeRelease.getDate() - 7);
     
+    console.log('C')
     if (new Date() < oneWeekBeforeRelease && !isLoyaltyMember) {
       return res.status(403).json({
         success: false,
@@ -42,16 +44,19 @@ async function createBooking(req, res) {
       });
     }
     
+    console.log('d')
     const bookingData = {
       eventId,
       seatIds,
       customer,
       concessions,
-      isLoyaltyMember
+      isLoyaltyMember: req.user.isLoyaltyMember || false
     };
     
+    console.log('e')
     const booking = await bookingService.createBooking(bookingData, userId);
     
+    console.log('f')
     res.status(201).json({
       success: true,
       message: 'Booking confirmed successfully',
@@ -67,8 +72,8 @@ async function createBooking(req, res) {
 
 async function getBooking(req, res) {
   try {
-    const userId = req.user?._id; // Optional - allow public viewing with reference
-    const booking = await bookingService.getBookingByReference(req.params.reference, userId);
+    const userId = req.user?._id; 
+    const booking = await bookingService.getBookingByReference(req.params.id, userId);
     
     if (!booking) {
       return res.status(404).json({
@@ -93,7 +98,8 @@ async function getBooking(req, res) {
 async function cancelBooking(req, res) {
   try {
     const userId = req.user._id;
-    const booking = await bookingService.cancelBooking(req.params.reference, userId);
+    console.log("This is the user id:", userId)
+    const booking = await bookingService.cancelBooking(req.params.id, userId);
     
     res.json({
       success: true,
@@ -110,8 +116,13 @@ async function cancelBooking(req, res) {
 
 async function getUserBookings(req, res) {
   try {
+    console.log('=== DEBUG: getUserBookings called ===');
+    console.log('User ID from token:', req.user._id);
+    console.log('User ID type:', typeof req.user._id);
+
     const userId = req.user._id;
     const bookings = await bookingService.getUserBookings(userId);
+    console.log("Bookings:", bookings)
     
     res.json({
       success: true,
