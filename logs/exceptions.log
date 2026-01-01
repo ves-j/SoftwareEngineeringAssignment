@@ -1378,3 +1378,319 @@
 [31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
 [31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
 [31m    at require (node:internal/modules/helpers:152:16)[39m
+2025-12-03 12:53:04:534 [31merror[39m: [31muncaughtException: Missing parameter name at index 6: /api/*; visit https://git.new/pathToRegexpError for info[39m
+[31mTypeError: Missing parameter name at index 6: /api/*; visit https://git.new/pathToRegexpError for info[39m
+[31m    at name (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:96:19)[39m
+[31m    at parse (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:113:68)[39m
+[31m    at pathToRegexp (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:267:58)[39m
+[31m    at Object.match (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:237:30)[39m
+[31m    at matcher (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/layer.js:86:23)[39m
+[31m    at new Layer (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/layer.js:93:62)[39m
+[31m    at router.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:398:19)[39m
+[31m    at app.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/node_modules/express/lib/application.js:222:21)[39m
+[31m    at Array.forEach (<anonymous>)[39m
+[31m    at app.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/express/lib/application.js:219:7)[39m
+2025-12-03 12:53:33:5333 [31merror[39m: [31muncaughtException: Missing parameter name at index 6: /api/*; visit https://git.new/pathToRegexpError for info[39m
+[31mTypeError: Missing parameter name at index 6: /api/*; visit https://git.new/pathToRegexpError for info[39m
+[31m    at name (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:96:19)[39m
+[31m    at parse (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:113:68)[39m
+[31m    at pathToRegexp (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:267:58)[39m
+[31m    at Object.match (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:237:30)[39m
+[31m    at matcher (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/layer.js:86:23)[39m
+[31m    at new Layer (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/layer.js:93:62)[39m
+[31m    at router.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:398:19)[39m
+[31m    at app.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/node_modules/express/lib/application.js:222:21)[39m
+[31m    at Array.forEach (<anonymous>)[39m
+[31m    at app.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/express/lib/application.js:219:7)[39m
+2025-12-03 12:53:43:5343 [31merror[39m: [31muncaughtException: Missing parameter name at index 6: /api/*; visit https://git.new/pathToRegexpError for info[39m
+[31mTypeError: Missing parameter name at index 6: /api/*; visit https://git.new/pathToRegexpError for info[39m
+[31m    at name (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:96:19)[39m
+[31m    at parse (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:113:68)[39m
+[31m    at pathToRegexp (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:267:58)[39m
+[31m    at Object.match (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:237:30)[39m
+[31m    at matcher (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/layer.js:86:23)[39m
+[31m    at new Layer (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/layer.js:93:62)[39m
+[31m    at router.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:398:19)[39m
+[31m    at app.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/node_modules/express/lib/application.js:222:21)[39m
+[31m    at Array.forEach (<anonymous>)[39m
+[31m    at app.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/express/lib/application.js:219:7)[39m
+2025-12-03 12:54:33:5433 [31merror[39m: [31muncaughtException: Missing parameter name at index 6: /api/*; visit https://git.new/pathToRegexpError for info[39m
+[31mTypeError: Missing parameter name at index 6: /api/*; visit https://git.new/pathToRegexpError for info[39m
+[31m    at name (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:96:19)[39m
+[31m    at parse (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:113:68)[39m
+[31m    at pathToRegexp (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:267:58)[39m
+[31m    at Object.match (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:237:30)[39m
+[31m    at matcher (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/layer.js:86:23)[39m
+[31m    at new Layer (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/layer.js:93:62)[39m
+[31m    at router.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:398:19)[39m
+[31m    at app.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/node_modules/express/lib/application.js:222:21)[39m
+[31m    at Array.forEach (<anonymous>)[39m
+[31m    at app.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/express/lib/application.js:219:7)[39m
+2025-12-03 12:57:17:5717 [31merror[39m: [31muncaughtException: Missing parameter name at index 6: /api/*; visit https://git.new/pathToRegexpError for info[39m
+[31mTypeError: Missing parameter name at index 6: /api/*; visit https://git.new/pathToRegexpError for info[39m
+[31m    at name (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:96:19)[39m
+[31m    at parse (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:113:68)[39m
+[31m    at pathToRegexp (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:267:58)[39m
+[31m    at Object.match (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:237:30)[39m
+[31m    at matcher (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/layer.js:86:23)[39m
+[31m    at new Layer (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/layer.js:93:62)[39m
+[31m    at router.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:398:19)[39m
+[31m    at app.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/node_modules/express/lib/application.js:222:21)[39m
+[31m    at Array.forEach (<anonymous>)[39m
+[31m    at app.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/express/lib/application.js:219:7)[39m
+2025-12-03 12:59:29:5929 [31merror[39m: [31muncaughtException: Missing parameter name at index 6: /api/*; visit https://git.new/pathToRegexpError for info[39m
+[31mTypeError: Missing parameter name at index 6: /api/*; visit https://git.new/pathToRegexpError for info[39m
+[31m    at name (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:96:19)[39m
+[31m    at parse (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:113:68)[39m
+[31m    at pathToRegexp (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:267:58)[39m
+[31m    at Object.match (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:237:30)[39m
+[31m    at matcher (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/layer.js:86:23)[39m
+[31m    at new Layer (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/layer.js:93:62)[39m
+[31m    at router.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:398:19)[39m
+[31m    at app.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/node_modules/express/lib/application.js:222:21)[39m
+[31m    at Array.forEach (<anonymous>)[39m
+[31m    at app.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/express/lib/application.js:219:7)[39m
+2025-12-03 13:01:15:115 [31merror[39m: [31muncaughtException: Missing parameter name at index 6: /api/*; visit https://git.new/pathToRegexpError for info[39m
+[31mTypeError: Missing parameter name at index 6: /api/*; visit https://git.new/pathToRegexpError for info[39m
+[31m    at name (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:96:19)[39m
+[31m    at parse (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:113:68)[39m
+[31m    at pathToRegexp (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:267:58)[39m
+[31m    at Object.match (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:237:30)[39m
+[31m    at matcher (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/layer.js:86:23)[39m
+[31m    at new Layer (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/layer.js:93:62)[39m
+[31m    at router.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:398:19)[39m
+[31m    at app.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/node_modules/express/lib/application.js:222:21)[39m
+[31m    at Array.forEach (<anonymous>)[39m
+[31m    at app.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/express/lib/application.js:219:7)[39m
+2025-12-03 13:04:47:447 [31merror[39m: [31muncaughtException: Missing parameter name at index 6: /api/*; visit https://git.new/pathToRegexpError for info[39m
+[31mTypeError: Missing parameter name at index 6: /api/*; visit https://git.new/pathToRegexpError for info[39m
+[31m    at name (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:96:19)[39m
+[31m    at parse (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:113:68)[39m
+[31m    at pathToRegexp (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:267:58)[39m
+[31m    at Object.match (/Users/timpel/Documents/Code/Software Assignment/node_modules/path-to-regexp/dist/index.js:237:30)[39m
+[31m    at matcher (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/layer.js:86:23)[39m
+[31m    at new Layer (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/layer.js:93:62)[39m
+[31m    at router.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:398:19)[39m
+[31m    at app.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/node_modules/express/lib/application.js:222:21)[39m
+[31m    at Array.forEach (<anonymous>)[39m
+[31m    at app.use (/Users/timpel/Documents/Code/Software Assignment/node_modules/express/lib/application.js:219:7)[39m
+2025-12-03 13:43:37:4337 [31merror[39m: [31muncaughtException: Cannot set properties of undefined (setting 'exports')[39m
+[31mTypeError: Cannot set properties of undefined (setting 'exports')[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:14:16)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/index.route.js:7:20)[39m
+2025-12-03 13:43:48:4348 [31merror[39m: [31muncaughtException: argument handler is required[39m
+[31mTypeError: argument handler is required[39m
+[31m    at Route.<computed> [as get] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:221:13)[39m
+[31m    at Router.<computed> [as get] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:12:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-03 13:43:56:4356 [31merror[39m: [31muncaughtException: argument handler is required[39m
+[31mTypeError: argument handler is required[39m
+[31m    at Route.<computed> [as get] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:221:13)[39m
+[31m    at Router.<computed> [as get] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:12:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-03 13:44:07:447 [31merror[39m: [31muncaughtException: Invalid or unexpected token[39m
+[31m/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:12[39m
+[31mrouter.get('/profile', auth, auth\)[39m
+[31m                             ^^^^^[39m
+
+[31mSyntaxError: Invalid or unexpected token[39m
+[31m    at wrapSafe (node:internal/modules/cjs/loader:1691:18)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1734:20)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/index.route.js:7:20)[39m
+2025-12-03 13:44:09:449 [31merror[39m: [31muncaughtException: authC is not defined[39m
+[31mReferenceError: authC is not defined[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:12:30)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/index.route.js:7:20)[39m
+2025-12-03 13:44:12:4412 [31merror[39m: [31muncaughtException: authC is not defined[39m
+[31mReferenceError: authC is not defined[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:12:30)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/index.route.js:7:20)[39m
+2025-12-03 13:44:13:4413 [31merror[39m: [31muncaughtException: authCon is not defined[39m
+[31mReferenceError: authCon is not defined[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:12:30)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/index.route.js:7:20)[39m
+2025-12-03 13:44:15:4415 [31merror[39m: [31muncaughtException: argument handler must be a function[39m
+[31mTypeError: argument handler must be a function[39m
+[31m    at Route.<computed> [as get] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/lib/route.js:228:15)[39m
+[31m    at Router.<computed> [as get] (/Users/timpel/Documents/Code/Software Assignment/node_modules/router/index.js:448:19)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/auth.routes.js:12:8)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+2025-12-06 21:46:09:469 [31merror[39m: [31muncaughtException: missing ) after argument list[39m
+[31m/Users/timpel/Documents/Code/Software Assignment/controllers/booking.controller.js:123[39m
+[31m    const bookings = await bookingService.getUserBookings(user: );[39m
+[31m                                                          ^^^^[39m
+
+[31mSyntaxError: missing ) after argument list[39m
+[31m    at wrapSafe (node:internal/modules/cjs/loader:1691:18)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1734:20)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/booking.route.js:3:27)[39m
+2025-12-07 02:18:54:1854 [31merror[39m: [31muncaughtException: Invalid or unexpected token[39m
+[31m/Users/timpel/Documents/Code/Software Assignment/models/booking.model.js:20[39m
+[31m  cus÷[39m
+[31m     [39m
+
+[31mSyntaxError: Invalid or unexpected token[39m
+[31m    at wrapSafe (node:internal/modules/cjs/loader:1691:18)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1734:20)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/services/booking.service.js:1:17)[39m
+2025-12-07 02:32:45:3245 [31merror[39m: [31muncaughtException: Invalid or unexpected token[39m
+[31m/Users/timpel/Documents/Code/Software Assignment/models/seat.model.js:27[39m
+[31m  y: ÷[39m
+[31m     [39m
+
+[31mSyntaxError: Invalid or unexpected token[39m
+[31m    at wrapSafe (node:internal/modules/cjs/loader:1691:18)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1734:20)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/services/booking.service.js:2:14)[39m
+2025-12-31 21:26:24:2624 [31merror[39m: [31muncaughtException: trueA is not defined[39m
+[31mReferenceError: trueA is not defined[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/models/seat.model.js:20:15)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/services/booking.service.js:2:14)[39m
+2026-01-01 10:20:49:2049 [31merror[39m: [31muncaughtException: getAvailableSeats is not defined[39m
+[31mReferenceError: getAvailableSeats is not defined[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/controllers/seat.controller.js:91:3)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/routes/seat.route.js:3:24)[39m
+2026-01-01 10:43:29:4329 [31merror[39m: [31muncaughtException: Unexpected identifier 'user'[39m
+[31m/Users/timpel/Documents/Code/Software Assignment/services/booking.service.js:225[39m
+[31m      user: userId[39m
+[31m      ^^^^[39m
+
+[31mSyntaxError: Unexpected identifier 'user'[39m
+[31m    at wrapSafe (node:internal/modules/cjs/loader:1691:18)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1734:20)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/controllers/booking.controller.js:1:24)[39m
+2026-01-01 10:43:33:4333 [31merror[39m: [31muncaughtException: Unexpected identifier 'user'[39m
+[31m/Users/timpel/Documents/Code/Software Assignment/services/booking.service.js:225[39m
+[31m      user: userId[39m
+[31m      ^^^^[39m
+
+[31mSyntaxError: Unexpected identifier 'user'[39m
+[31m    at wrapSafe (node:internal/modules/cjs/loader:1691:18)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1734:20)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/controllers/booking.controller.js:1:24)[39m
+2026-01-01 10:48:59:4859 [31merror[39m: [31muncaughtException: Unexpected token ':'[39m
+[31m/Users/timpel/Documents/Code/Software Assignment/services/booking.service.js:199[39m
+[31m  async getBookingByReference(_id: bookingReference, userId = null) {[39m
+[31m                                 ^[39m
+
+[31mSyntaxError: Unexpected token ':'[39m
+[31m    at wrapSafe (node:internal/modules/cjs/loader:1691:18)[39m
+[31m    at Module._compile (node:internal/modules/cjs/loader:1734:20)[39m
+[31m    at Object..js (node:internal/modules/cjs/loader:1892:10)[39m
+[31m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+[31m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+[31m    at TracingChannel.traceSync (node:diagnostics_channel:328:14)[39m
+[31m    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)[39m
+[31m    at Module.require (node:internal/modules/cjs/loader:1503:12)[39m
+[31m    at require (node:internal/modules/helpers:152:16)[39m
+[31m    at Object.<anonymous> (/Users/timpel/Documents/Code/Software Assignment/controllers/booking.controller.js:1:24)[39m

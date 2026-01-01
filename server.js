@@ -177,17 +177,19 @@ app.use((err, req, res, next) => {
 });
 
 
-app.use(/.*/, (req, res) => {
-  logger.error(`Unhandled error: ${err.message}`, { stack: err.stack });
-  if (req.originalUrl.startsWith('/api')) {
-    res.status(404).json({
-      success: false,
-      message: 'API route not found'
-    });
-  } else {
-    res.status(404).sendFile(path.join(__dirname, 'public', '404.html'));
-  }
-});
+// app.use('/api/*', (req, res) => {
+//   logger.warn(`API route not found: ${req.originalUrl}`)
+//   res.status(404).json({
+//     success: false,
+//     message: 'API route not found'
+//   });
+// });
+
+// app.use((req, res) => {
+//   logger.warn(`Route not found: ${req.originalUrl}`);
+//   res.status(404).sendFile(path.join(__dirname, 'public', '404.html'));
+// });
+
 
 // Handle uncaught exceptions
 process.on('uncaughtException', (error) => {
