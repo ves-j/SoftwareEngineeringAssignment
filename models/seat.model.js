@@ -23,8 +23,8 @@ const seatSchema = new Schema({
     type: Boolean,
     default: true
   },
-  x: Number,
-  y: Number
+  // x: Number,
+  // y: Number
 }, {
   timestamps: true
 });
