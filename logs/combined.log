@@ -63,3 +63,37 @@
 2026-01-01 10:48:32:4832 [33mwarn[39m: [33mGET /api/bookings/69564e2f22bd65e5c678ced2 401 - 12ms[39m
 2026-01-01 10:48:39:4839 [33mwarn[39m: [33mGET /api/bookings/69564e2f22bd65e5c678ced2 404 - 43ms[39m
 2026-01-01 10:50:41:5041 [33mwarn[39m: [33mPUT /api/bookings/69564e2f22bd65e5c678ced2/cancel 400 - 35ms[39m
+2026-01-01 15:31:40:3140 [32minfo[39m: [32mServing login page[39m
+2026-01-01 15:31:40:3140 [33mwarn[39m: [33mGET /favicon.ico 404 - 13ms[39m
+2026-01-01 15:31:50:3150 [32minfo[39m: [32mServing signup page[39m
+2026-01-01 15:40:19:4019 [32minfo[39m: [32mServing login page[39m
+2026-01-01 15:40:21:4021 [32minfo[39m: [32mServing signup page[39m
+2026-01-01 15:54:55:5455 [32minfo[39m: [32mServing login page[39m
+2026-01-01 15:56:00:560 [32minfo[39m: [32mServing login page[39m
+2026-01-01 15:56:09:569 [33mwarn[39m: [33mPOST /api/auth/login 401 - 28ms[39m
+2026-01-01 15:57:31:5731 [32minfo[39m: [32mServing login page[39m
+2026-01-01 21:27:11:2711 [32minfo[39m: [32mServing login page[39m
+2026-01-01 21:27:17:2717 [33mwarn[39m: [33mPOST /api/auth/login 401 - 24ms[39m
+2026-01-01 21:28:33:2833 [32minfo[39m: [32mServing login page[39m
+2026-01-01 21:28:36:2836 [32minfo[39m: [32mServing login page[39m
+2026-01-01 21:29:54:2954 [32minfo[39m: [32mServing login page[39m
+2026-01-01 21:30:13:3013 [32minfo[39m: [32mServing login page[39m
+2026-01-01 21:30:16:3016 [32minfo[39m: [32mServing signup page[39m
+2026-01-01 21:31:01:311 [32minfo[39m: [32mServing signup page[39m
+2026-01-01 21:31:22:3122 [32minfo[39m: [32mServing signup page[39m
+2026-01-01 21:32:40:3240 [32minfo[39m: [32mServing login page[39m
+2026-01-01 21:43:21:4321 [32minfo[39m: [32mServing login page[39m
+2026-01-01 22:08:05:85 [32minfo[39m: [32mServing login page[39m
+2026-01-01 22:10:29:1029 [32minfo[39m: [32mServing login page[39m
+2026-01-01 22:10:39:1039 [33mwarn[39m: [33mPOST /api/auth/login 401 - 28ms[39m
+2026-01-02 16:46:56:4656 [33mwarn[39m: [33mGET /favicon.ico 404 - 28ms[39m
+2026-01-02 16:47:31:4731 [32minfo[39m: [32mServing login page[39m
+2026-01-02 17:04:08:48 [32minfo[39m: [32mServing login page[39m
+2026-01-02 17:04:24:424 [32minfo[39m: [32mServing login page[39m
+2026-01-02 17:04:48:448 [32minfo[39m: [32mServing login page[39m
+2026-01-02 17:05:00:50 [32minfo[39m: [32mServing login page[39m
+2026-01-02 17:05:03:53 [32minfo[39m: [32mServing signup page[39m
+2026-01-02 17:05:08:58 [32minfo[39m: [32mServing login page[39m
+2026-01-02 17:05:09:59 [32minfo[39m: [32mServing signup page[39m
+2026-01-02 17:05:10:510 [32minfo[39m: [32mServing login page[39m
+2026-01-02 17:15:05:155 [32minfo[39m: [32mServing login page[39m

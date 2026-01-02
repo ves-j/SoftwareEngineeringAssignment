@@ -1,32 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victoria Hall • Sign up</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="form-container">
-            <h2>Sign Up</h2>
-            <form action="/signup" method="POST">
-                <div class="form-group">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <button type="submit" class="btn">Sign Up</button>
-            </form>
-            <p>Already have an account? <a href="/">Login here</a></p>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand">
+
+        <div>
+          <h1>Victoria Hall Booking</h1>
+          <p>Create an account and start booking</p>
         </div>
+      </div>
+      <div class="nav">
+        <button type="button" onclick="location.href='/'">Login</button>
+        <button class="active" type="button" disabled>Sign up</button>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="card" style="grid-column: span 12; max-width: 720px; justify-self: center;">
+        <div class="card-body">
+          <div class="card-title">
+            <h2>Create account</h2>
+
+          </div>
+          <p class="muted" style="margin-top:8px;">Adults (18+) are auto-enrolled as loyalty members by the backend.</p>
+
+          <div id="signup-alert" class="alert danger hidden" role="alert"></div>
+
+          <form id="signup-form" class="form" style="margin-top: 14px;">
+            <div class="form-2">
+              <div>
+                <label for="name">Full name</label>
+                <input class="input" id="name" name="name" placeholder="Jane Doe" required />
+              </div>
+              <div>
+                <label for="phone">Phone (optional)</label>
+                <input class="input" id="phone" name="phone" placeholder="+44 …" />
+              </div>
+            </div>
+
+            <div class="form-2">
+              <div>
+                <label for="email">Email</label>
+                <input class="input" id="email" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+              <div>
+                <label for="dateOfBirth">Date of birth</label>
+                <input class="input" id="dateOfBirth" name="dateOfBirth" type="date" required />
+              </div>
+            </div>
+
+            <div>
+              <label for="password">Password (min 6 chars)</label>
+              <input class="input" id="password" name="password" type="password" minlength="6" required />
+            </div>
+
+            <div class="row" style="margin-top: 4px;">
+              <button id="signup-btn" class="btn" type="submit">Create account</button>
+              <span class="muted" id="signup-status" aria-live="polite"></span>
+            </div>
+          </form>
+
+          <p class="muted" style="margin-top: 14px;">Already have an account? <a href="/">Login</a></p>
+
+        </div>
+      </section>
     </div>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/signup.js"></script>
 </body>
 </html>

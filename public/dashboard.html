@@ -1,46 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victoria Hall • Dashboard</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="dashboard">
-            <h1 id="welcome-message">Hello, User!</h1>
-            <div class="user-info">
-                <p><strong>Username:</strong> <span id="user-username"></span></p>
-                <p><strong>Email:</strong> <span id="user-email"></span></p>
-                <p><strong>User ID:</strong> <span id="user-id"></span></p>
-            </div>
-            <a href="/logout" class="btn logout-btn">Logout</a>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand">
+        <div>
+          <h1>Victoria Hall Booking</h1>
+          <p id="hello" class="muted">...</p>
         </div>
-    </div>
+      </div>
 
-    <script>
-        // Fetch user data when the page loads
-        fetch('/api/user')
-            .then(response => {
-                if (!response.ok) {
-                    window.location.href = '/';
-                    return;
-                }
-                return response.json();
-            })
-            .then(user => {
-                if (user) {
-                    document.getElementById('welcome-message').textContent = `Hello, ${user.username}!`;
-                    document.getElementById('user-username').textContent = user.username;
-                    document.getElementById('user-email').textContent = user.email;
-                    document.getElementById('user-id').textContent = user.id;
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                window.location.href = '/';
-            });
-    </script>
+      <nav class="nav" aria-label="Primary">
+        <button id="nav-events" class="active" type="button">Events</button>
+        <button id="nav-bookings" type="button">My bookings</button>
+        <button id="nav-profile" type="button">Profile</button>
+        <button id="nav-logout" type="button">Logout</button>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <!-- EVENTS VIEW -->
+      <section id="view-events" class="card" aria-label="Events">
+        <div class="card-body">
+          <div class="card-title">
+            <h2>Upcoming events</h2>
+            <span id="events-count" class="badge">Loading…</span>
+          </div>
+
+          <div id="events-alert" class="alert warn hidden" role="alert"></div>
+
+          <div class="row" style="margin-top: 12px;">
+            <div style="flex: 1; min-width: 220px;">
+              <label for="events-search">Search</label>
+              <input class="input" id="events-search" placeholder="Search by title…" />
+            </div>
+            <div style="width: 210px;">
+              <label for="events-sort">Sort</label>
+              <select id="events-sort">
+                <option value="date-asc">Date (soonest)</option>
+                <option value="date-desc">Date (latest)</option>
+                <option value="price-asc">Base price (low)</option>
+                <option value="price-desc">Base price (high)</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="events-list" class="events" style="margin-top: 14px;"></div>
+        </div>
+      </section>
+
+      <!-- BOOKINGS VIEW -->
+      <section id="view-bookings" class="card hidden" aria-label="Bookings">
+        <div class="card-body">
+          <div class="card-title">
+            <h2>My bookings</h2>
+            <span id="bookings-count" class="badge">0</span>
+          </div>
+
+          <div class="row" style="margin-top: 12px;">
+            <div style="flex: 1; min-width: 220px;">
+              <label for="bookings-search">Search</label>
+              <input class="input" id="bookings-search" placeholder="Search by event title or booking ref…" />
+            </div>
+            <button id="bookings-refresh" class="btn secondary" type="button" style="align-self: end;">Refresh</button>
+          </div>
+
+          <div id="bookings-alert" class="alert warn hidden" role="alert" style="margin-top: 12px;"></div>
+
+          <div style="overflow:auto; margin-top: 12px;">
+            <table class="table" aria-label="Bookings table">
+              <thead>
+                <tr>
+                  <th>Event</th>
+                  <th>Date</th>
+                  <th>Seats</th>
+                  <th>Total</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="bookings-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROFILE VIEW -->
+      <section id="view-profile" class="card hidden" aria-label="Profile">
+        <div class="card-body">
+          <div class="card-title">
+            <h2>Profile</h2>
+            <span id="loyalty-badge" class="badge">—</span>
+          </div>
+
+          <div id="profile-alert" class="alert warn hidden" role="alert" style="margin-top: 12px;"></div>
+
+          <div class="grid" style="grid-template-columns: repeat(12, 1fr); gap: 14px; margin-top: 12px;">
+            <div class="card" style="grid-column: span 12;">
+              <div class="card-body">
+                <h3 style="margin:0 0 10px; font-size: 14px;">Your details</h3>
+                <form id="profile-form" class="form">
+                  <div class="form-2">
+                    <div>
+                      <label for="p-name">Full name</label>
+                      <input class="input" id="p-name" required />
+                    </div>
+                    <div>
+                      <label for="p-phone">Phone</label>
+                      <input class="input" id="p-phone" />
+                    </div>
+                  </div>
+
+                  <div class="form-2">
+                    <div>
+                      <label for="p-email">Email</label>
+                      <input class="input" id="p-email" disabled />
+                    </div>
+                    <div>
+                      <label for="p-dob">Date of birth</label>
+                      <input class="input" id="p-dob" type="date" />
+                    </div>
+                  </div>
+
+                  <div class="row" style="margin-top: 4px;">
+                    <button id="profile-save" class="btn" type="submit">Save changes</button>
+                    <span id="profile-status" class="muted" aria-live="polite"></span>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="card" style="grid-column: span 12;">
+              <div class="card-body">
+                <h3 style="margin:0 0 10px; font-size: 14px;">Change password</h3>
+                <form id="pw-form" class="form">
+                  <div class="form-2">
+                    <div>
+                      <label for="pw-current">Current password</label>
+                      <input class="input" id="pw-current" type="password" minlength="6" required />
+                    </div>
+                    <div>
+                      <label for="pw-new">New password</label>
+                      <input class="input" id="pw-new" type="password" minlength="6" required />
+                    </div>
+                  </div>
+                  <div class="row" style="margin-top: 4px;">
+                    <button id="pw-save" class="btn secondary" type="submit">Update password</button>
+                    <span id="pw-status" class="muted" aria-live="polite"></span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Booking -->
+  <div id="modal-backdrop" class="modal-backdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h3 id="modal-title">Book seats</h3>
+        <button id="modal-close" class="icon-btn" type="button" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div id="modal-alert" class="alert warn hidden" role="alert"></div>
+
+        <div class="kv" style="margin-top: 12px;">
+          <div><strong>Date</strong><div id="m-date" class="muted">—</div></div>
+          <div><strong>Type</strong><div id="m-type" class="muted">—</div></div>
+          <div><strong>Release</strong><div id="m-release" class="muted">—</div></div>
+        </div>
+
+        <div class="row" style="margin-top: 12px; align-items: end;">
+          <div style="width: 210px;">
+            <label for="m-section">Section</label>
+            <select id="m-section">
+              <option value="stalls">Stalls</option>
+              <option value="circle">Circle</option>
+              <option value="upperCircle">Upper Circle</option>
+            </select>
+          </div>
+          <div style="width: 210px;">
+            <label for="m-concession">Ticket type</label>
+            <select id="m-concession">
+              <option value="adult">Adult</option>
+              <option value="child">Child (under 16)</option>
+              <option value="senior">Senior (70+)</option>
+            </select>
+          </div>
+          <div style="flex: 1; min-width: 220px;">
+            <label for="m-phone">Contact phone (optional)</label>
+            <input class="input" id="m-phone" placeholder="+44 …" />
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 12px;">
+          <span id="m-availability" class="badge">Availability: —</span>
+        </div>
+
+        <div style="margin-top: 12px;">
+          <label>Rows</label>
+          <div id="m-rows" class="pills" role="tablist"></div>
+        </div>
+
+        <div style="margin-top: 12px;">
+          <label>Seats</label>
+          <div id="m-seats" class="seats"></div>
+        </div>
+
+        <div class="card" style="margin-top: 14px;">
+          <div class="card-body">
+            <div class="row">
+              <div>
+                <div style="font-weight: 800;">Selected: <span id="m-selected-count">0</span></div>
+                <div class="muted" id="m-selected-list">—</div>
+              </div>
+              <div class="spacer"></div>
+              <div style="text-align:right;">
+                <div style="font-weight: 900; font-size: 18px;" id="m-total">£0.00</div>
+                <div class="muted" style="font-size: 12px;">Estimated (final total confirmed by backend)</div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-top: 12px;">
+              <button id="m-book" class="btn" type="button" disabled>Confirm booking</button>
+              <button id="m-clear" class="btn secondary" type="button">Clear selection</button>
+              <span id="m-status" class="muted" aria-live="polite"></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/dashboard.js"></script>
 </body>
 </html>

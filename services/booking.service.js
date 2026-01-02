@@ -10,40 +10,38 @@ class BookingService {
       if (!event || !event.isActive) {
         throw new Error('Event not found or is no longer available');
       }
-      
-      // Check total seats for event
+
+
       const totalSeats = await Seat.countDocuments();
-      const eventBookings = await Booking.countDocuments({ 
-        event: bookingData.eventId,
-        status: { $ne: 'cancelled' }
-      });
-      
-      if (eventBookings >= totalSeats) {
+
+
+      const availability = await this.getEventAvailability(bookingData.eventId);
+      if (availability.isSoldOut) {
         throw new Error('This event is completely sold out');
       }
-      
+
       // Validate seats exist
       const seats = await Seat.find({ _id: { $in: bookingData.seatIds } });
       if (seats.length !== bookingData.seatIds.length) {
         throw new Error('One or more seats not found');
       }
-      
+
       // Check event-specific seat availability
       const seatService = require('./seat.service');
       const availabilityCheck = await seatService.areSeatsAvailableForEvent(
         bookingData.seatIds,
         bookingData.eventId
       );
-      
+
       if (!availabilityCheck.allAvailable) {
         const seatInfo = availabilityCheck.unavailableSeats
           .map(s => `${s.row}${s.seatNumber} (${s.section})`)
           .join(', ');
         throw new Error(`Seats ${seatInfo} are already booked for this event`);
       }
-      
+
       const bookingReference = this.generateBookingReference();
-      
+
       const totalAmount = pricingService.calculateTotalPrice(
         seats,
         event.basePrice,
@@ -51,15 +49,15 @@ class BookingService {
         bookingData.concessions,
         bookingData.isLoyaltyMember
       );
-      
+
       // Check group discount eligibility
       const finalConcessions = [...bookingData.concessions];
       if (bookingData.seatIds.length >= 10) {
         finalConcessions.push('group');
       }
-      
+
       console.log("Creating booking for user ID:", userId);
-      
+
       const booking = new Booking({
         bookingReference,
         event: bookingData.eventId,
@@ -82,10 +80,10 @@ class BookingService {
         loyaltyDiscount: bookingData.isLoyaltyMember,
         status: 'confirmed'
       });
-      
+
       await booking.save();
       return booking;
-      
+
     } catch (error) {
       throw error;
     }
@@ -99,12 +97,12 @@ class BookingService {
 
   async getBookingByReference(bookingReference, userId = null) {
     const query = { _id: bookingReference };
-    
+
     if (userId) {
       query.user = userId;
     }
-    
-    console.log("The request got here ")
+
+    console.log("The request got here ");
     return await Booking.findOne(query)
       .populate('event')
       .populate('seats.seat')
@@ -119,45 +117,60 @@ class BookingService {
   }
 
   async cancelBooking(bookingReference, userId) {
-    const booking = await Booking.findOne({ 
+    const booking = await Booking.findOne({
       _id: bookingReference,
       user: userId
     });
-    
+
     if (!booking) {
       throw new Error('Booking not found or you are not authorized to cancel this booking');
     }
-    
+
     await booking.populate('event');
     const eventDate = booking.event.eventDate;
     const now = new Date();
     const hoursUntilEvent = (eventDate - now) / (1000 * 60 * 60);
-    
+
     if (hoursUntilEvent < 24) {
       throw new Error('Cancellation not allowed within 24 hours of the event');
     }
-    
+
     booking.status = 'cancelled';
     await booking.save();
-    
+
     return booking;
   }
 
+
   async getEventAvailability(eventId) {
     const totalSeats = await Seat.countDocuments();
-    const bookedSeats = await Booking.countDocuments({ 
+
+
+    const eventBookings = await Booking.find({
       event: eventId,
       status: { $ne: 'cancelled' }
+    }).select('seats.seat');
+
+
+    const bookedSeatIds = new Set();
+    eventBookings.forEach(booking => {
+      (booking.seats || []).forEach(seatBooking => {
+        if (seatBooking?.seat) bookedSeatIds.add(seatBooking.seat.toString());
+      });
     });
-    
-    const availableSeats = totalSeats - bookedSeats;
-    
+
+    const bookedSeats = bookedSeatIds.size;
+    const availableSeats = Math.max(totalSeats - bookedSeats, 0);
+
+    const pctRaw = totalSeats ? (bookedSeats / totalSeats) * 100 : 0;
+    const percentageBooked = Math.round(pctRaw * 10) / 10; 
+
     return {
       totalSeats,
       bookedSeats,
       availableSeats,
       isSoldOut: availableSeats === 0,
-      percentageBooked: Math.round((bookedSeats / totalSeats) * 100)
+      percentageBooked
     };
   }
 }
