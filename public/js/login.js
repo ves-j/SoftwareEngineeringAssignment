@@ -36,8 +36,6 @@
         body: { email, password }
       });
 
-      // Expected shape:
-      // { success: true, token, data: { user } }
       api.setToken(res.token);
       api.setUser(res.data?.user || null);
 

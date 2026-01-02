@@ -694,7 +694,7 @@
       mBook.disabled = selected.size === 0;
       mClear.disabled = false;
       mStatus.textContent = '';
-      // reload availability and seats after attempt (especially if seats got taken)
+      // reload availability and seats after attempt
       try{
         await loadAvailability();
         await loadSeatsForCurrentEvent();
@@ -702,9 +702,9 @@
     }
   });
 
-  // ----- First load -----
+
   (async function init(){
-    // greet using cached user while we fetch fresh
+
     renderHello();
 
     await loadProfile();

@@ -1,14 +1,11 @@
-/*
-  Simple API helper for the Victoria Hall Booking backend.
-  Stores JWT in localStorage and sends it as: Authorization: Bearer <token>
-*/
+
 
 (function(){
   const STORAGE_KEY = 'vh_token';
   const USER_KEY = 'vh_user';
 
   const api = {
-    baseUrl: '', // same-origin by default. If you host frontend elsewhere, set to 'http://localhost:5000'
+    baseUrl: '',
 
     getToken(){
       return localStorage.getItem(STORAGE_KEY) || '';
@@ -65,7 +62,7 @@
     }
   };
 
-  // ------- tiny UI helpers (toast) -------
+
   function ensureToastContainer(){
     let wrap = document.querySelector('.toast-wrap');
     if (!wrap){
