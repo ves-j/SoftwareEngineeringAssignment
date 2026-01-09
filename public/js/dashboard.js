@@ -1,13 +1,13 @@
 (function(){
   const api = window.vhApi;
 
-  // ----- Auth guard -----
+  // auth guard
   if (!api.getToken()) {
     location.href = '/';
     return;
   }
 
-  // ----- Nav / views -----
+
   const views = {
     events: document.getElementById('view-events'),
     bookings: document.getElementById('view-bookings'),
@@ -38,10 +38,10 @@
     location.href = '/';
   });
 
-  // ----- Shared elements -----
+
   const hello = document.getElementById('hello');
 
-  // ----- Events view state -----
+
   const eventsListEl = document.getElementById('events-list');
   const eventsCountEl = document.getElementById('events-count');
   const eventsAlertEl = document.getElementById('events-alert');
@@ -144,7 +144,7 @@
     }
   }
 
-  // ----- Bookings view -----
+
   const bookingsCountEl = document.getElementById('bookings-count');
   const bookingsAlertEl = document.getElementById('bookings-alert');
   const bookingsTbody = document.getElementById('bookings-tbody');
@@ -161,6 +161,14 @@
     if (status === 'cancelled') return '<span class="badge danger">cancelled</span>';
     return `<span class="badge warn">${escapeHtml(status||'pending')}</span>`;
   }
+
+  function getDisplayedBookingTotal(booking){
+  if (Array.isArray(booking?.seats) && booking.seats.length > 0) {
+    const sum = booking.seats.reduce((acc, sb) => acc + Number(sb?.price || 0), 0);
+    return Math.round(sum * 100) / 100;
+  }
+  return Number(booking?.totalAmount || 0);
+}
 
   function renderBookings(){
     const q = bookingsSearchEl.value.trim().toLowerCase();
@@ -185,7 +193,7 @@
       const seatCount = Array.isArray(b.seats) ? b.seats.length : 0;
       const title = b.event?.title || '—';
       const date = b.event?.eventDate ? api.formatDateTime(b.event.eventDate) : '—';
-      const total = api.formatMoney(b.totalAmount || 0);
+      const total = api.formatMoney(getDisplayedBookingTotal(b));
       const canCancel = b.status === 'confirmed' ? 'data-can-cancel="1"' : '';
       return `
         <tr>
@@ -268,7 +276,7 @@
     }
   }
 
-  // ----- Profile view -----
+
   const loyaltyBadge = document.getElementById('loyalty-badge');
   const profileAlert = document.getElementById('profile-alert');
   const profileForm = document.getElementById('profile-form');
@@ -297,7 +305,6 @@
     pPhone.value = me.phone || '';
     pEmail.value = me.email || '';
 
-    // Date input expects YYYY-MM-DD
     if (me.dateOfBirth){
       const d = new Date(me.dateOfBirth);
       const yyyy = d.getFullYear();
@@ -368,7 +375,7 @@
         body: { currentPassword, newPassword }
       });
 
-      // backend returns a NEW token
+
       api.setToken(res.token);
       me = res.data?.user || me;
       api.setUser(me);
@@ -522,7 +529,7 @@
   mConcession.addEventListener('change', updateSelectionSummary);
 
   function getBestConcession(selectedConcession, seatCount){
-    // backend uses the BEST (largest) discount among concessions + group (if 10+ seats)
+    // backend uses the BEST (largest) discount among concessions group (if 10+ seats)
     const discounts = {
       adult: 0,
       group: 0.15,
@@ -647,7 +654,7 @@
 
     openModal();
 
-    // Load fresh profile & availability (to know loyalty)
+    // Load fresh profile & availability
     await loadProfile();
     await loadAvailability();
 
